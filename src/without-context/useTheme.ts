@@ -1,5 +1,9 @@
 import { useState } from 'react';
 
+/**
+ * --backgroundや--foregroundは、src/styles/globals.cssの変数を参照している
+ * documentElement は常に <html> 要素を返す
+ */
 export const useTheme = () => {
   const [isDark, setIsDark] = useState(false);
 
